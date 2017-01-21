@@ -44,6 +44,8 @@ public class Main extends Application {
             return true;
         }
 
+        System.out.println(env + ":" + value);
+
         return false;
     }
 

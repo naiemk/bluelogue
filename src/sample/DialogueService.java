@@ -30,8 +30,8 @@ public class DialogueService {
     public static final String BLUE_MIX_STT_UN = "BLUEMIX_SPEACH_TO_TEXT_UN";
     public static final String BLUE_MIX_STT_PW = "BLUEMIX_SPEACH_TO_TEXT_PW";
 
-    public static final String BLUE_MIX_TTS_UN = "BLUEMIX_SPEACH_TO_TEXT_UN";
-    public static final String BLUE_MIX_TTS_PW = "BLUEMIX_SPEACH_TO_TEXT_PW";
+    public static final String BLUE_MIX_TTS_UN = "BLUEMIX_TEXT_TO_SPEACH_UN";
+    public static final String BLUE_MIX_TTS_PW = "BLUEMIX_TEXT_TO_SPEACH_PW";
 
     private final List<Voice> voices;
     private SpeechToText speachToText;
@@ -45,7 +45,7 @@ public class DialogueService {
         speachToText.setUsernameAndPassword(System.getenv(BLUE_MIX_STT_UN), System.getenv(BLUE_MIX_STT_PW));
 
         textToSpeech = new TextToSpeech();
-        textToSpeech.setUsernameAndPassword(System.getenv(BLUE_MIX_TTS_UN), System.getProperty(BLUE_MIX_TTS_PW));
+        textToSpeech.setUsernameAndPassword(System.getenv(BLUE_MIX_TTS_UN), System.getenv(BLUE_MIX_TTS_PW));
         voices = textToSpeech.getVoices().execute();
         playOutLoad("Let us start the game!");
     }
