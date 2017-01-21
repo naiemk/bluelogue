@@ -27,7 +27,6 @@ public class Recorder {
 
     public void start(CancellationToken cancel) {
         try {
-//            if (1==1)return;
             TargetDataLine microphone = microphoneLine.get();
             microphone.open(AUDIO_FORMAT);
 
