@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/8"
+          xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="sample.Controller"
+          prefHeight="600" prefWidth="600">
+   <children>
+      <Button fx:id="dialogBtn" mnemonicParsing="false" onAction="#converse" text="Start the Dialogue!" GridPane.rowIndex="3" />
+      <Canvas fx:id="spectogramCanvas" height="200.0" width="400.0" GridPane.rowIndex="0" />
+      <Canvas fx:id="waveFormCanvas" height="200.0" width="400.0" GridPane.rowIndex="1" />
+      <TextArea fx:id="dialog" prefHeight="400.0" prefWidth="200.0" GridPane.rowIndex="2"  />
+   </children>
+   <rowConstraints>
+      <RowConstraints minHeight="200.0" prefHeight="200.0" />
+      <RowConstraints minHeight="200.0" prefHeight="200.0" />
+      <RowConstraints minHeight="10.0" prefHeight="150.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+</GridPane>
