@@ -4,14 +4,14 @@ Set up a demo voice-based dialogue app in a sec (uses IBM Watson Cloud)
 
 If you want to impress people in a hackathon with a machine that you can talk to, use bluelog.
 
-# Get a free IBM bluemix account, with both Speech to text and text to speech services.
-# Set the secret keys for SST and TTS services in the folowing env Variables:
+1. Get a free IBM bluemix account, with both Speech to text and text to speech services.
+2. Set the secret keys for SST and TTS services in the folowing env Variables:
 .. - BLUEMIX_SPEACH_TO_TEXT_UN
 .. - BLUEMIX_SPEACH_TO_TEXT_PW
 .. - BLUEMIX_TEXT_TO_SPEACH_UN
 .. - BLUEMIX_TEXT_TO_SPEACH_PW
-# Build bluelog
-# Type your expected dialogue with the following format and press Start.
+3. Build bluelog
+4. Type your expected dialogue with the following format and press Start.
 
 ```
 <Keyword>:Response
