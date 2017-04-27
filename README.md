@@ -22,9 +22,10 @@ Once your machine hears the keyword from the dictionary you provided, it will pl
 
 Fun example:
 
+```
 hello: Hi! How are you doing?
 kitchen: Ok, it's is right ther on the right. Feel free to pick something from the fridge
 john: He is fine? What about you? Is all the family doing well?
-
+```
 
 Now you can be creative and make a dialogue that contains hello, kitchen, and john.
